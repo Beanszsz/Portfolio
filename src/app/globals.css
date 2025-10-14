@@ -1,0 +1,55 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Desktop: 1920px and above */
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Large Desktop/Laptop: 1440px - 1919px */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Standard Laptop: 1024px - 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Tablet Landscape: 768px - 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Tablet Portrait: 481px - 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Mobile: 320px - 480px */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+}
