@@ -207,7 +207,6 @@
     padding: 2rem 0.5rem;
     padding-top: 5rem;
     gap: 2rem;
-    background-size: 18px 18px;
   }
 
   .project-container1,
@@ -236,7 +235,6 @@
     padding: 1.5rem 0.5rem;
     padding-top: 4rem;
     gap: 1.5rem;
-    background-size: 15px 15px;
     min-height: auto;
   }
 
@@ -289,5 +287,84 @@
 
   .project-desc p {
     font-size: clamp(0.8rem, 3vw, 0.9rem);
+  }
+}
+
+/* Mobile: up to 480px */
+@media (max-width: 480px) {
+  .project {
+    padding: 1rem 0.25rem;
+    padding-top: 3.5rem;
+    gap: 1rem;
+    min-height: auto;
+  }
+
+  .project-wrapper,
+  .project-wrapper2 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project-container1,
+  .project-container2,
+  .project-container3,
+  .project-container4 {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 100%;
+    padding: 1rem;
+    gap: 0.75rem;
+    min-height: auto;
+    border-radius: 1rem;
+  }
+
+  .project-container2,
+  .project-container4 {
+    flex-direction: column;
+  }
+
+  .project-container1:hover,
+  .project-container2:hover,
+  .project-container3:hover,
+  .project-container4:hover {
+    transform: scale(1.01);
+  }
+
+  .project-image,
+  .project-image2,
+  .project-image3,
+  .project-image4 {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .project-image img,
+  .project-image2 img,
+  .project-image3 img,
+  .project-image4 img {
+    max-width: 100%;
+    border-radius: 0.75rem;
+  }
+
+  .project-desc {
+    text-align: center;
+  }
+
+  .project-desc h3 {
+    font-size: clamp(0.9rem, 5vw, 1.1rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .project-desc p {
+    font-size: clamp(0.7rem, 3.5vw, 0.8rem);
+    line-height: 1.4;
+  }
+
+  .project-desc a {
+    font-size: clamp(0.75rem, 3.5vw, 0.85rem);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-top: 0.5rem;
   }
 }

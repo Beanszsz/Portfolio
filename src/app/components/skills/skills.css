@@ -77,7 +77,6 @@
 @media (max-width: 1024px) {
   .skills-container {
     min-height: 30vh;
-    background-size: 18px 18px;
   }
 
   .icon-card {
@@ -96,7 +95,6 @@
 @media (max-width: 767px) {
   .skills-container {
     min-height: 25vh;
-    background-size: 15px 15px;
   }
 
   .skills-track {
@@ -118,5 +116,38 @@
 
   .icon-card:hover {
     transform: scale(1.05);
+  }
+}
+
+/* Mobile: up to 480px */
+@media (max-width: 480px) {
+  .skills-container {
+    min-height: 20vh;
+    padding-top: 4rem;
+  }
+
+  .skills-track {
+    width: 95%;
+    height: 85%;
+  }
+
+  .icon-card {
+    width: clamp(80px, 35vw, 120px);
+    height: clamp(100px, 22vh, 140px);
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .icon {
+    font-size: clamp(2.5rem, 14vw, 4rem);
+    margin-top: 0.75rem;
+  }
+
+  .icon-card:hover {
+    transform: scale(1.03);
+  }
+
+  .icon-card:hover .icon {
+    transform: scale(1.1);
   }
 }
