@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Beans Portfolio",
   description: "My official developer portfolio",
+  icons: {
+    icon: "/2nd Logo idea.png",
+  },
 };
 
 export default function RootLayout({
